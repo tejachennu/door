@@ -1,0 +1,24 @@
+<html lang="en">
+<head>
+    <title>DOOR</title>
+    <link rel="stylesheet" href="door.css">
+</head>
+<body>
+    <h1>CLICK THE BUTTON TO CLOSE AND OPEN THE DOOR..!</h1>
+    <div>
+        <img id="image" src="open.jpg" alt="close">
+    </div>
+    <div>
+        <button id="open" onclick="door_open()">OPEN</button>
+        <button id="close" onclick="door_close()">CLOSE</button>
+    </div>
+    <script>
+        function door_open(){
+    document.getElementById('image').src="open.jpg";
+}
+function door_close(){
+    document.getElementById('image').src ="close.jpg";
+}
+    </script>
+</body>
+</html>
